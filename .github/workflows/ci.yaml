@@ -28,7 +28,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: run tests
-      run:
+      run: |
         cd ch4
         python -m unittest discover
 
