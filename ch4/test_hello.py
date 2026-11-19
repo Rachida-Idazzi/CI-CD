@@ -1,5 +1,11 @@
+import sys
+import os
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 import unittest
 from hello import say_hello
+
 
 class TestHello(unittest.TestCase):
     def test_say_hello(self):
